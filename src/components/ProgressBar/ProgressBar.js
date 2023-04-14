@@ -23,10 +23,7 @@ const STYLES = {
   }
 };
 
-
 const ProgressBar = ({ value, size }) => {
-
-const height = size === 'small' ? 8 : 12;
 
 const Bar = styled.div`
   width: var(--width);

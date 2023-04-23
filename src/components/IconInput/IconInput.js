@@ -30,7 +30,9 @@ const IconInput = ({
 }) => {
   const styles = STYLES[size];
 
-  // TODO: validate size
+  if (!styles) {
+    throw new Error('Invalid size');
+  }
 
   return (
     <Wrapper>
